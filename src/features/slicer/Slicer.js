@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 // export const baseUrl = "http://192.168.53.53:3000/"; // change your Ip acording to your system
-export const baseUrl = "http://192.168.100.19:3000/"; // change your Ip acording to your system
+// export const baseUrl = "http://192.168.100.110:3000/"; // change your Ip acording to your system
+export const baseUrl = "https://book-nest-backend-production.up.railway.app/"; // change your Ip acording to your system
 
 const token = localStorage.getItem("NBAdminToken");
 
