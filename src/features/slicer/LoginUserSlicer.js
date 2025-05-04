@@ -17,11 +17,11 @@ export const LoginUserApi = createAsyncThunk(
           },
         }
       );
-      if (response?.data?.user?.isadmin === true) {
+      if (response?.user?.isadmin === true) {
         
-        localStorage.setItem("NBAdminToken", response?.data?.token);
-        localStorage.setItem("NBAdminData", JSON.stringify(response?.data?.user));
-        console.log(response.data);
+        localStorage.setItem("NBAdminToken", response?.token);
+        localStorage.setItem("NBAdminData", JSON.stringify(response?.user));
+        console.log(response);
       }
         
 

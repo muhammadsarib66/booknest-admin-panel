@@ -36,8 +36,8 @@ export function Login() {
       // If validation passes, proceed with form submission
       const result = await dispatch(LoginUserApi(formValues)).unwrap();
       
-      console.log("api result ", result?.existingUser);
-      if(result && result?.existingUser?.isadmin === false){
+      console.log("api result ", result?.user);
+      if(result && result?.user?.isadmin === false){
         toast.error("You are not an admin")
       }
       else{
