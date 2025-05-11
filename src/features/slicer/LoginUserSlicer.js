@@ -17,6 +17,7 @@ export const LoginUserApi = createAsyncThunk(
           },
         }
       );
+      console.log(response, 'login slicer')
       if (response?.user?.isadmin === true) {
         
         localStorage.setItem("NBAdminToken", response?.token);
