@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// export const baseUrl = "http://192.168.100.110:3000/"; // change your Ip acording to your system
+// export const baseUrl = "http://192.168.100.3:3000/"; // change your Ip acording to your system
 // export const baseUrl = "http://192.168.100.110:3000/"; // change your Ip acording to your system
 export const baseUrl = "https://booknestbackend-production.up.railway.app/"; // change your Ip acording to your system
 
